@@ -24,7 +24,7 @@ class AWSEngine(plasmascript.DataEngine):
             images = starcluster.ec2utils.get_registered_images()
             for image_name in images:
                 image = images[image_name]
-                image = dict(zip(image.keys(), [QVariant(val) for val in image.values()])
+                image = dict(zip(image.keys(), [QVariant(val) for val in image.values()]))
                 self.setData(name, image_name, QVariant(image))
         return True
 

@@ -5,3 +5,15 @@ Author: Justin Riley (justin.t.riley@gmail.com)
 AWSEngine serves as an Amazon Web Services data source for plasma. 
 It should provide data such as running instances, ec2 images,
 s3 bucket/file lists, etc
+
+REQUIREMENTS:
+-------------
+At the moment, AWSEngine requires starcluster to be installed and configured:
+
+Homepage: http://web.mit.edu/stardev/cluster
+
+Download: http://github.com/jtriley/StarCluster/
+
+To download StarCluster from github (git required):
+
+git clone git://github.com/jtriley/StarCluster.git
