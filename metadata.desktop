@@ -1,0 +1,17 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=AWS Engine
+Type=Service
+ServiceTypes=Plasma/DataEngine
+Icon=chronometer
+X-Plasma-API=python
+X-Plasma-MainScript=code/main.py
+X-KDE-PluginInfo-Author=Justin Riley
+X-KDE-PluginInfo-Email=justin.t.riley@gmail.com
+X-KDE-PluginInfo-Name=awsengine
+X-KDE-PluginInfo-Version=1.0
+X-KDE-PluginInfo-Website=http://web.mit.edu/stardev/cluster
+X-KDE-PluginInfo-Category=Tools
+X-KDE-PluginInfo-Depends=
+X-KDE-PluginInfo-License=LGPL
+X-KDE-PluginInfo-EnabledByDefault=true
