@@ -1,4 +1,8 @@
 #!/usr/bin/env python
+import logging
+from logger import logger
+logger.setLevel(logging.DEBUG)
+
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import *
 from PyKDE4 import plasmascript
