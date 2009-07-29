@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 import logging
-from logger import logger
-logger.setLevel(logging.DEBUG)
+from logger import logger as log
+log.setLevel(logging.DEBUG)
 
 from PyQt4.QtCore import *
 from PyKDE4.kdecore import *
@@ -30,6 +30,10 @@ class AWSEngine(plasmascript.DataEngine):
                 image = images[image_name]
                 image = dict(zip(image.keys(), [QVariant(val) for val in image.values()]))
                 self.setData(name, image_name, QVariant(image))
+        if name == "instances":
+            instances = starcluster.ec2utils.get_instances()
+            for instance in instances:
+                self.setData(name, instance, QVariant(instance))
         return True
 
 def CreateDataEngine(parent):
